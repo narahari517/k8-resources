@@ -9,9 +9,9 @@ spec:
     env:
     - name: concept
       value: "devops"
-    - name: concept
+    - name: concept1
       value: "docker"
-    - name: concept
+    - name: concept2
       value: "aws"
-    - name: concept
+    - name: concept3
       value: "kubernetes"
