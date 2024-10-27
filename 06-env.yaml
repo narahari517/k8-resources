@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: environment
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: concept
+      value: "devops"
+    - name: concept
+      value: "docker"
+    - name: concept
+      value: "aws"
+    - name: concept
+      value: "kubernetes"
