@@ -6,14 +6,18 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    env:
-      - name: concept
-        valueFrom:
-          configMapKeyRef:
-            name: nginx-config # name of the configmap you are referring to
-            key: concept # env.name and configmap can be different
-      - name: cloud
-        valueFrom:
-          configMapKeyRef:
-            name: nginx-config
-            key: cloud
+    envFrom:
+    - configMapRef:
+        name: nginx-config
+        
+    # env:
+    #   - name: concept
+    #     valueFrom:
+    #       configMapKeyRef:
+    #         name: nginx-config # name of the configmap you are referring to
+    #         key: concept # env.name and configmap can be different
+    #   - name: cloud
+    #     valueFrom:
+    #       configMapKeyRef:
+    #         name: nginx-config
+    #         key: cloud
