@@ -57,4 +57,5 @@ spec:
   - name: nginx-svc-port
     protocol: TCP
     port: 80 # service port
-    targetPort: 30007 # container port
+    targetPort: 80 # container port
+    nodePort: 30007
